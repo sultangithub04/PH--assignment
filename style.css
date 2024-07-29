@@ -22,7 +22,11 @@ body {
     margin: 0 auto;
     padding: 0px 15px;
 }
+/* banner-section start */
 
+.header-background{
+background-image: linear-gradient( rgba(77, 73, 73, 0.548), black);
+}
 .nav-rigth-text {
     color: #E6533C;
     font-size: 2.25rem;
@@ -38,7 +42,6 @@ ul {
     border-radius: 18px;
     padding: .5px 0;
 }
-
 li>a {
     padding: 8px 24px;
     text-decoration: none;
@@ -59,8 +62,8 @@ li>a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px auto;
-    ma
+    margin: 0 auto;
+    padding: 50px 0px;
    
 }
 .banner-right{
@@ -146,6 +149,34 @@ li>a {
     top: 120px;
     right:  -50px;
 }
+/* banner-section end */
+
+/* change-your-habit-section start */
+h2{
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 10px;
+}
+h5{
+    color: white;
+    font-size: 1.13rem;
+    font-weight: 700;
+}
+.Change-Your-Habits{
+    text-align: center;
+    margin-top: 80px;
+}
+.trainer-card>img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.trainer-cards{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+/* change-your-habit-section end */
 @media screen and (max-width:576px){
     .banner{
     flex-direction: column;
@@ -156,7 +187,17 @@ li>a {
     .nav-bar>ul>i{
         display: block;
     }
+    .trainer-cards{
+        grid-template-columns: 231px;
+        justify-content: center;
+    }
+    .disply-box-text{
+        right:  0px;
+    }
 }
-@media screen and(min-width:576px) and (max-width:992px){
-    
+@media screen and (min-width:576px) and (max-width:992px){
+    .trainer-cards{
+        grid-template-columns:231px 231px;
+        justify-content: center;
+    }
 }
