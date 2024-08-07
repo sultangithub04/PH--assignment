@@ -468,7 +468,7 @@ select {
     .challenge-text{
     text-align: center;
     font-style: italic;
-    padding: 0px;
+    padding: 20px;
     }
     .challenge-text>h1{
         color:rgba(255, 255, 255, 0.463);
@@ -560,6 +560,12 @@ hr{
     }
     .challenge-text>h1{
         font-size: 3rem;
+    }
+    .disply-box-button{
+        left:0px;
+    }
+    .bmi-calculator{
+        margin: 0 auto;
     }
 }
 
